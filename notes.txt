@@ -1,0 +1,2 @@
+this is for notes taken through the journey of learning Docker : 
+-> docker is used in order to resolve the problem 
