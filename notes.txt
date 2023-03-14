@@ -77,3 +77,18 @@ Docker  => Container strectural units that are used to hold the entire package t
             => data Volume , create persistance storage , name volumes 
 storage :  => Directory mounts , mounts host directory into a container 
             =>  connect to external storage platforms 
+
+====================> Docker container and Image  <====================
+You can use CLI for : =>run
+                      =>start 
+                      =>stop 
+                      =>move
+docker container is an isoltaed and secure application platform
+Image : read only template with instructions for creating a docker container 
+docker image: described in a text file , called docker file , which have a well deifned syntax
+docker engine , provides the core docker technology that enables image and container 
+exmple : 
+Docker run hello-world =>docker : docker engine is used to run the program  
+                       => run : create and run a docker container 
+                       => hello-world : name of the container 
+
