@@ -144,4 +144,5 @@ for setting storage driver , we ca, use a command  " $ dockerd --storage-driver=
  "
  Further explinations can be found following this link: https://www.javatpoint.com/docker-storage-driver
 
- 
+ ================================> Comparison between docker and kubernetees   <================================
+ link : https://www.javatpoint.com/docker-vs-kubernetes 
