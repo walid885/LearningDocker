@@ -1,7 +1,7 @@
 from flask import Flask
 from redis import Redis 
 app = Flask(__name__)
-redis = Redis(host='Redis',port=6377)
+redis = Redis(host='Redis',port=6379)
 @app.route('/')
 def hello():
 	count = redis.incr('hits')
