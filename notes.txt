@@ -29,3 +29,14 @@ Docker provides cross-platform compatibility means if an application is designed
  */A server which is a type of long-running program called a daemon process.
 */The REST API is used to specify interfaces that programs can use to talk to the daemon and instruct it what to do.
 */A command line interface client.
+=============== docker Features ======================
+==> easy and fast config
+=> Increase productiv
+=> APP ISOLATION
+SWARM ? => ( what is this ?)
+Routing Mesh 
+SErvecies 
+Security management 
+
+///* swarm It is a clustering and scheduling tool for Docker containers. Swarm uses the Docker API as its front end, which helps us to use various tools to control it. It also helps us to control 
+the host 
