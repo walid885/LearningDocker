@@ -17,7 +17,7 @@ It does not a require full operating system to run applications.
 It uses application dependencies to reduce the risk.
 Docker allows you to use a remote repository to share your container with others.
 It provides continuous deployment and testing environment.
-================================DISADVENTEGES======================================================
+================================>   DISADVENTEGES   <================================
 It increases complexity due to an additional layer.
 In Docker, it is difficult to manage large amount of containers.
 Some features such as container self -registration, containers self-inspects, copying files form host to the container, and more are missing in the Docker.
@@ -25,11 +25,11 @@ Docker is not a good solution for applications that require rich graphical inter
 Docker provides cross-platform compatibility means if an application is designed to run in a Docker container on Windows, then it can't run on Linux or vice versa.
 
 
-=============== docker Engine ====================
+================================> docker Engine <================================
  */A server which is a type of long-running program called a daemon process.
 */The REST API is used to specify interfaces that programs can use to talk to the daemon and instruct it what to do.
 */A command line interface client.
-=============== docker Features ======================
+================================> docker Features <================================
 ==> easy and fast config
 => Increase productiv
 => APP ISOLATION
@@ -41,13 +41,13 @@ Security management
 ///* swarm It is a clustering and scheduling tool for Docker containers. Swarm uses the Docker API as its front end, which helps us to use various tools to control it. It also helps us to control 
 the host 
 
-===================Docker Architecture ==================== 
+================================>   Docker Architecture  <================================ 
 
         => client     |
 Docker  => Host       | => for a great illustrations , you can follow this link : https://www.javatpoint.com/docker-architecture
         => Registry   |
  
-====================> Docker Client <====================
+================================> Docker Client <================================
 Docker client uses REST API ( I need to do a project on rest api using docker , in order to grasp the concept )
 ==> docker client uses {commands + rest API }to connect with the docker daemon ( the server ) 
 ==> the terminal sends docker commands to the deamon , the daemon , receives theses commands , in the form of rest api
@@ -57,15 +57,15 @@ CLI |=> docker pull
     |=> docker run
 
 
-====================> Docker Host  <====================
+================================> Docker Host  <================================
 provide the environment and execute and run applications , docker daemon + images + containers + networks + storage
-====================> Docker Registry  <====================
+================================> Docker Registry  <================================
 
     =>public Registry (docker hub)
 Reg 
     => private Registry
 
-====================> Docker Objects  <====================
+================================> Docker Objects  <================================
 
         => Images : read only binary templates, ( private container registry to share container images within the enterprise , // public container to share container images with the world)
 Docker  => Container strectural units that are used to hold the entire package that is needed to run the application  
@@ -73,12 +73,12 @@ Docker  => Container strectural units that are used to hold the entire package t
         =>
 
 
-====================> Docker Storage  <====================
+================================> Docker Storage  <================================
             => data Volume , create persistance storage , name volumes 
 storage :  => Directory mounts , mounts host directory into a container 
             =>  connect to external storage platforms 
 
-====================> Docker container and Image  <====================
+================================> Docker container and Image  <================================
 You can use CLI for : =>run
                       =>start 
                       =>stop 
@@ -92,7 +92,7 @@ Docker run hello-world =>docker : docker engine is used to run the program
                        => run : create and run a docker container 
                        => hello-world : name of the container 
 
-====================> Docker file  <====================
+================================> Docker file  <================================
 
 used to build images 
 using : 
@@ -102,19 +102,19 @@ run
 cmd 
 copy 
 workdir
-====================> Docker Push Repos  <====================
+================================> Docker Push Repos  <================================
 => we can push docker to the global reposotry  ==> helpful when we want to access the docker file officially from all around the globe 
 
 
-====================> Docker Commands  <====================
+================================> Docker Commands  <================================
 Differnet usueful commands can be found following this link :https://www.javatpoint.com/docker-useful-commands
 
 
-====================> Docker Cloud  <====================
+================================> Docker Cloud  <================================
 we can store and fetch docker images on the cloud registry ; full GUI interface 
 we can use it with docker ID 
 
-====================> Docker compose  <====================
+================================> Docker compose  <================================
 it is a tool  fpr development , testing and staging enviroments : we can use to file to configure our applications services 
 
               => start , stop and rebuild the services
@@ -130,3 +130,18 @@ it provides : => view the status of running services
 
 you can find the typical docker-compose file format and arugments following this link : https://www.javatpoint.com/docker-compose
 
+/* i am going to create a docker compose example */ 
+++> Mission DOne , the docker compose file is done correctly 
+
+================================> Docker Storage Driver  <================================
+docker provides the pluggable storage driver architecture ( bases on the linux filesystem )
+in order to implement : 
+=> set driver at the docker daemon start time 
+=> docker daemon can only run one one storage driver 
+
+=> to check which storage driver is used => we can use the command docker info 
+for setting storage driver , we ca, use a command  " $ dockerd --storage-driver=devicemapper  
+ "
+ Further explinations can be found following this link: https://www.javatpoint.com/docker-storage-driver
+
+ 
