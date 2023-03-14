@@ -1,2 +1,31 @@
 this is for notes taken through the journey of learning Docker : 
 -> docker is used in order to resolve the problem 
+
+=> docker : centralized platform for packaging , deploying and running applications. 
+=> develop containers , and can be deployed anywhere 
+docker is composed by : Client , server , machine , hub , compose 
+=> docker container is a lightweight alternatives of the virtual machie. => ship the whole app as a single package
+===> eliminating machine problmes
+// computing density 
+==> gerat platform for development 
+There are the following advantages of Docker -
+
+It runs the container in seconds instead of minutes.
+It uses less memory.
+It provides lightweight virtualization.
+It does not a require full operating system to run applications.
+It uses application dependencies to reduce the risk.
+Docker allows you to use a remote repository to share your container with others.
+It provides continuous deployment and testing environment.
+================================DISADVENTEGES======================================================
+It increases complexity due to an additional layer.
+In Docker, it is difficult to manage large amount of containers.
+Some features such as container self -registration, containers self-inspects, copying files form host to the container, and more are missing in the Docker.
+Docker is not a good solution for applications that require rich graphical interface.
+Docker provides cross-platform compatibility means if an application is designed to run in a Docker container on Windows, then it can't run on Linux or vice versa.
+
+
+=============== docker Engine ====================
+ */A server which is a type of long-running program called a daemon process.
+*/The REST API is used to specify interfaces that programs can use to talk to the daemon and instruct it what to do.
+*/A command line interface client.
