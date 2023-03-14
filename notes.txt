@@ -40,3 +40,40 @@ Security management
 
 ///* swarm It is a clustering and scheduling tool for Docker containers. Swarm uses the Docker API as its front end, which helps us to use various tools to control it. It also helps us to control 
 the host 
+
+===================Docker Architecture ==================== 
+
+        => client     |
+Docker  => Host       | => for a great illustrations , you can follow this link : https://www.javatpoint.com/docker-architecture
+        => Registry   |
+ 
+====================> Docker Client <====================
+Docker client uses REST API ( I need to do a project on rest api using docker , in order to grasp the concept )
+==> docker client uses {commands + rest API }to connect with the docker daemon ( the server ) 
+==> the terminal sends docker commands to the deamon , the daemon , receives theses commands , in the form of rest api
+
+    |=> docker build    
+CLI |=> docker pull 
+    |=> docker run
+
+
+====================> Docker Host  <====================
+provide the environment and execute and run applications , docker daemon + images + containers + networks + storage
+====================> Docker Registry  <====================
+
+    =>public Registry (docker hub)
+Reg 
+    => private Registry
+
+====================> Docker Objects  <====================
+
+        => Images : read only binary templates, ( private container registry to share container images within the enterprise , // public container to share container images with the world)
+Docker  => Container strectural units that are used to hold the entire package that is needed to run the application  
+        =>docker networking : =>bridge( default network driver) , host( used when we don't need for network isolation )  , none , overlay( swarm services to communicate with each others => run diff docker host  ) , macvlan ( MAC ADDRESSES TO CONTAINERS )
+        =>
+
+
+====================> Docker Storage  <====================
+            => data Volume , create persistance storage , name volumes 
+storage :  => Directory mounts , mounts host directory into a container 
+            =>  connect to external storage platforms 
