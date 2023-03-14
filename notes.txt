@@ -92,3 +92,41 @@ Docker run hello-world =>docker : docker engine is used to run the program
                        => run : create and run a docker container 
                        => hello-world : name of the container 
 
+====================> Docker file  <====================
+
+used to build images 
+using : 
+from 
+lable
+run 
+cmd 
+copy 
+workdir
+====================> Docker Push Repos  <====================
+=> we can push docker to the global reposotry  ==> helpful when we want to access the docker file officially from all around the globe 
+
+
+====================> Docker Commands  <====================
+Differnet usueful commands can be found following this link :https://www.javatpoint.com/docker-useful-commands
+
+
+====================> Docker Cloud  <====================
+we can store and fetch docker images on the cloud registry ; full GUI interface 
+we can use it with docker ID 
+
+====================> Docker compose  <====================
+it is a tool  fpr development , testing and staging enviroments : we can use to file to configure our applications services 
+
+              => start , stop and rebuild the services
+it provides : => view the status of running services
+              => stream the log output of a running service
+              => run  a one off command on a service 
+
+==> in order to implement compose : 1/ pit app envi variables inside docker file to access publicly
+                                    2/ provide services names in the docker compose.yml file so they can be run together in an isoleted envi
+                                    3/ run docker compose up and compse will start and run your entire app
+
+
+
+you can find the typical docker-compose file format and arugments following this link : https://www.javatpoint.com/docker-compose
+
